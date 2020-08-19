@@ -1,0 +1,52 @@
+package Simul;
+
+import java.util.Scanner;
+
+public class Simul {
+
+
+    public static void main(String[] args) {
+      
+       Scanner scan = new Scanner(System.in);
+       System.out.println("how many unknowns (2 or 3)?");
+       int i = scan.nextInt();
+       
+       switch (i)
+       {
+        
+        
+        case 2:
+            
+        System.out.println("your equation is on this format:");
+        System.out.println("a1X + b1Y = c1");
+        System.out.println("a2X + b2Y = c2");
+        System.out.println("enter value of a1");
+        double a1 = scan.nextDouble();
+       
+       
+       System.out.println("enter value of b1?");
+       double b1 = scan.nextDouble();
+       
+       
+       System.out.println("enter value of c1");
+       double c1 = scan.nextDouble();
+       
+       
+       System.out.println("enter value of a2");
+       double a2 = scan.nextDouble();
+       
+       
+       System.out.println("enter value of b2?");
+       double b2 = scan.nextDouble();
+       
+       
+       System.out.println("enter value of c2");
+       double c2 = scan.nextDouble();
+       
+       double y = ((a2*c1) - (a2*c2))/((a2*b1)-(a2*b2));
+       double x = (c1-(b1*y))/a1;
+               
+       System.out.println("the value of y is " + y);
+       System.out.println("the value of x is " + x);
+       
+       break;
