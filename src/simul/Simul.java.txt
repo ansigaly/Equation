@@ -51,5 +51,76 @@ public class Simul {
        
        break;
 
+
+            
+       case 3:
+       
+           
+       System.out.println("your equation is on this format:");
+       System.out.println("d1X + e1Y + f1Z = g1");
+       System.out.println("d2X + e2Y + f2Z = g2");
+       System.out.println("d3X + e3Y + f3Z = g3");
+       
+       
+       System.out.println("enter value of d1");
+       double d1 = scan.nextDouble();
+       
+       
+       System.out.println("enter value of e1?");
+       double e1 = scan.nextDouble();
+       
+       System.out.println("enter value of f1");
+       double f1 = scan.nextDouble();
+       
+       
+       System.out.println("enter value of g1?");
+       double g1 = scan.nextDouble();
+       
+       
+       System.out.println("enter value of d2");
+       double d2 = scan.nextDouble();
+       
+       
+       System.out.println("enter value of e2?");
+       double e2 = scan.nextDouble();
+       
+       
+       System.out.println("enter value of f2");
+       double f2 = scan.nextDouble();
+       
+       System.out.println("enter value of g2");
+       double g2 = scan.nextDouble();
+       
+       System.out.println("enter value of d3");
+       double d3 = scan.nextDouble();
+       
+       
+       System.out.println("enter value of e3?");
+       double e3 = scan.nextDouble();
+       
+       
+       System.out.println("enter value of f3");
+       double f3 = scan.nextDouble();
+       
+       System.out.println("enter value of g3");
+       double g3 = scan.nextDouble();
+      
+       
+       double l = (g1-g2)/(f1-f2);
+       double n = (g1-(f1*l))/e1;
+       double m = (g3-(e3*n)-(f3*l))/d3;
+       
+       System.out.println("the value of x is " + m);
+       System.out.println("the value of y is " + n);
+       System.out.println("the value of z is " + l);
+       
+       break;
+           
+       default:
+       System.out.println("choose only either 2 or 3");
+       break;
+     
+             
 }//switch 
-}//main 
+}//main
+}//class 

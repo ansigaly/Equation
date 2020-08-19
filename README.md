@@ -2,7 +2,6 @@
 
 CLass project Between Michael and Esther
 
-
 TASK:
 To write a simple program to solve simultaneous equations.
 
