@@ -50,3 +50,6 @@ public class Simul {
        System.out.println("the value of x is " + x);
        
        break;
+
+}//switch 
+}//main 
